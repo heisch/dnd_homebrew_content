@@ -17,6 +17,384 @@
   },
   "monster": [
     {
+      "name": "Deimos",
+      "source": "NicksHomebrew",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "L",
+        "NX",
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "30d8 + 90",
+        "average": 225
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 11,
+      "dex": 16,
+      "con": 16,
+      "int": 20,
+      "wis": 14,
+      "cha": 16,
+      "save": {
+        "con": "+10",
+        "int": "+12",
+        "wis": "+9"
+      },
+      "skill": {
+        "arcana": "+19",
+        "history": "+12",
+        "insight": "+9",
+        "perception": "+9"
+      },
+      "senses": [
+        "truesight 120 ft."
+      ],
+      "passive": 19,
+      "resist": [
+        "cold",
+        "lightning",
+        "necrotic"
+      ],
+      "immune": [
+        "poison",
+        {
+          "immune": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "frightened",
+        "paralyzed",
+        "poisoned"
+      ],
+      "languages": [
+        "Common plus up to five other languages"
+      ],
+      "cr": {
+        "cr": "21",
+        "lair": "22"
+      },
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Deimos is an 18th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 20}, {@hit 12} to hit with spell attacks). Deimos has the following wizard spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell mage hand}",
+                "{@spell prestidigitation}",
+                "{@spell ray of frost}",
+                "{@spell toll the dead|XGE}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell detect magic}",
+                "{@spell ice knife|XGE}",
+                "{@spell magic missile}",
+                "{@spell shield}",
+                "{@spell thunderwave}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell detect thoughts}",
+                "{@spell invisibility}",
+                "{@spell Melf's acid arrow}",
+                "{@spell mirror image}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell animate dead}",
+                "{@spell counterspell}",
+                "{@spell dispel magic}",
+                "{@spell fireball}",
+                "{@spell haste}",
+                "{@spell slow}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell blight}",
+                "{@spell dimension door}",
+                "{@spell ice storm}"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell cloudkill}",
+                "{@spell cone of cold}",
+                "{@spell scrying}",
+                "{@spell steel wind strike|XGE}"
+              ],
+              "slots": 3
+            },
+            "6": {
+              "spells": [
+                "{@spell circle of death}",
+                "{@spell disintegrate}",
+                "{@spell globe of invulnerability}",
+                "{@spell wall of ice}"
+              ],
+              "slots": 1
+            },
+            "7": {
+              "spells": [
+                "{@spell finger of death}",
+                "{@spell plane shift}",
+                "{@spell teleport}"
+              ],
+              "slots": 1
+            },
+            "8": {
+              "spells": [
+                "{@spell dominate monster}",
+                "{@spell power word stun}"
+              ],
+              "slots": 1
+            },
+            "9": {
+              "spells": [
+                "{@spell blade of disaster|TCE}",
+                "{@spell imprisonment}",
+                "{@spell power word kill}",
+                "{@spell time stop}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Legendary Resistance (3/Day)",
+          "entries": [
+            "If Deimos fails a saving throw, he can choose to succeed instead."
+          ]
+        },
+        {
+          "name": "Rejuvenation",
+          "entries": [
+            "If he has a phylactery, if killed Deimos gains a new body in {@dice 1d10} days, regaining all his hit points and becoming active again. The new body appears within 5 feet of the phylactery."
+          ]
+        },
+        {
+          "name": "Turn Resistance",
+          "entries": [
+            "Deimos has advantage on saving throws against any effect that turns undead."
+          ]
+        },
+        {
+          "name": "Items",
+          "entries": [
+            "Deimos is carrying and attuned to the following items: {@item amulet of proof against detection and location}, {@item ring of mind shielding} and {@item staff of power}"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Paralyzing Touch",
+          "entries": [
+            "{@atk ms} {@hit 12} to hit, reach 5 ft., one creature. {@h}10 ({@damage 3d6}) cold damage. The target must succeed on a {@dc 18} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+          ]
+        }
+      ],
+      "legendary": [
+        {
+          "name": "Cantrip",
+          "entries": [
+            "Deimos casts a cantrip."
+          ]
+        },
+        {
+          "name": "Paralyzing Touch (Costs 2 Actions)",
+          "entries": [
+            "Deimos uses his Paralyzing Touch."
+          ]
+        },
+        {
+          "name": "Frightening Gaze (Costs 2 Actions)",
+          "entries": [
+            "Deimos fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a {@dc 18} Wisdom saving throw against this magic or become {@condition frightened} for 1 minute. The {@condition frightened} target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to Deimos' gaze for the next 24 hours."
+          ]
+        },
+        {
+          "name": "Disrupt Life (Costs 3 Actions)",
+          "entries": [
+            "Each non-undead creature within 20 feet of Deimos must make a {@dc 18} Constitution saving throw against this magic, taking 21 ({@damage 6d6}) necrotic damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "legendaryGroup": {
+        "name": "Lich",
+        "source": "MM"
+      },
+      "traitTags": [
+        "Legendary Resistances",
+        "Rejuvenation",
+        "Turn Resistance"
+      ],
+      "senseTags": [
+        "U"
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "C",
+        "N"
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "conditionInflict": [
+        "paralyzed",
+        "frightened"
+      ],
+      "conditionInflictSpell": [
+        "charmed",
+        "invisible",
+        "stunned"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "tokenUrl": "https://5e.tools/img/MM/Lich.png?v=1.131.0",
+      "fluff": {
+        "name": "Lich",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "Liches are the remains of great wizards who embrace undeath as a means of preserving themselves. They further their own power at any cost, having no interest in the affairs of the living except where those affairs interfere with their own. Scheming and insane, they hunger for long-forgotten knowledge and the most terrible secrets. Because the shadow of death doesn't hang over them, they can conceive plans that take years, decades, or centuries to come to fruition.",
+                  "A lich is a gaunt and skeletal humanoid with withered flesh stretched tight across its bones. Its eyes succumbed to decay long ago, but points of light burn in its empty sockets. It is often garbed in the moldering remains of fine clothing and jewelry worn and dulled by the passage of time.",
+                  {
+                    "name": "Secrets of Undeath",
+                    "type": "entries",
+                    "entries": [
+                      "No wizard takes up the path to lichdom on a whim, and the process of becoming a lich is a well-guarded secret. Wizards that seek lichdom must make bargains with fiends, evil gods, or other foul entities. Many turn to Orcus, Demon Prince of Undeath, whose power has created countless liches. However, those that control the power of lichdom always demand fealty and service for their knowledge.",
+                      "A lich is created by an arcane ritual that traps the wizard's soul within a phylactery. Doing so binds the soul to the mortal world, preventing it from traveling to the Outer Planes after death. A phylactery is traditionally an amulet in the shape of a small box, but it can take the form of any item possessing an interior space into which arcane sigils of naming, binding, immortality, and dark magic are scribed in silver.",
+                      "With its phylactery prepared, the future lich drinks a potion of transformation-a vile concoction of poison mixed with the blood of a sentient creature whose soul is sacrificed to the phylactery. The wizard falls dead, then rises as a lich as its soul is drawn into the phylactery, where it forever remains."
+                    ]
+                  },
+                  {
+                    "name": "Soul Sacrifices",
+                    "type": "entries",
+                    "entries": [
+                      "A lich must periodically feed souls to its phylactery to sustain the magic preserving its body and consciousness. It does this using the {@spell imprisonment} spell. Instead of choosing one of the normal options of the spell, the lich uses the spell to magically trap the target's body and soul inside its phylactery. The phylactery must be on the same plane as the lich for the spell to work. A lich's phylactery can hold only one creature at a time, and a dispel magic cast as a 9th-level spell upon the phylactery releases any creature imprisoned within it. A creature imprisoned in the phylactery for 24 hours is consumed and destroyed utterly, whereupon nothing short of divine intervention can restore it to life.",
+                      "A lich that fails or forgets to maintain its body with sacrificed souls begins to physically fall apart, and might eventually become a demilich."
+                    ]
+                  },
+                  {
+                    "name": "Death and Restoration",
+                    "type": "entries",
+                    "entries": [
+                      "When a lich's body is broken by accident or assault, the will and mind of the lich drains from it, leaving only a lifeless corpse behind. Within days, a new body reforms next to the lich's phylactery, coalescing out of glowing smoke that issues from the device. Because the destruction of its phylactery means the possibility of eternal death, a lich usually keeps its phylactery in a hidden, well-guarded location.",
+                      "Destroying a lich's phylactery is no easy task and often requires a special ritual, item, or weapon. Every phylactery is unique, and discovering the key to its destruction can be a quest in and of itself."
+                    ]
+                  },
+                  {
+                    "name": "Lonely Existence",
+                    "type": "entries",
+                    "entries": [
+                      "From time to time, a lich might be stirred from its single-minded pursuit of power to take an interest in the world around it, most often when some great event reminds it of the life it once led. It otherwise lives in isolation, engaging only with those creatures whose service helps secure its lair.",
+                      "Few liches call themselves by their former names, instead adopting monikers such as the Black Hand or the Forgotten King."
+                    ]
+                  },
+                  {
+                    "name": "Magic Collectors",
+                    "type": "entries",
+                    "entries": [
+                      "Liches collect spells and magic items. In addition to its spell repertoire, a lich has ready access to potions, scrolls, libraries of spellbooks, one or more wands, and perhaps a staff or two. It has no qualms about putting these treasures to use whenever its lair comes under attack."
+                    ]
+                  },
+                  {
+                    "name": "Undead Nature",
+                    "type": "entries",
+                    "entries": [
+                      "A lich doesn't require air, food, drink, or sleep."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "A Lich's Lair",
+                    "entries": [
+                      "A lich often haunts the abode it favored in life, such as a lonely tower, a haunted ruin, or an academy of black magic. Alternatively, some liches construct secret tombs filled with powerful guardians and traps. Everything about a lich's lair reflects its keen mind and wicked cunning, including the magic and mundane traps that secure it. Undead, constructs, and bound demons lurk in shadowy recesses, emerging to destroy those who dare to disturb the lich's work.",
+                      "A lich encountered in its lair has a challenge rating of 22 (41,000 XP)."
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "name": "Lair Actions",
+                "entries": [
+                  "On initiative count 20 (losing initiative ties), the lich can take a lair action to cause one of the following magical effects; the lich can't use the same effect two rounds in a row:",
+                  {
+                    "type": "list",
+                    "items": [
+                      "The lich rolls a {@dice d8} and regains a spell slot of that level or lower. If it has no spent spell slots of that level or lower, nothing happens.",
+                      "The lich targets one creature it can see within 30 feet of it. A crackling cord of negative energy tethers the lich to the target. Whenever the lich takes damage, the target must make a {@dc 18} Constitution saving throw. On a failed save, the lich takes half the damage (rounded down), and the target takes the remaining damage. This tether lasts until initiative count 20 on the next round or until the lich or the target is no longer in the lich's lair.",
+                      "The lich calls forth the spirits of creatures that died in its lair. These apparitions materialize and attack one creature that the lich can see within 60 feet of it. The target must succeed on a {@dc 18} Constitution saving throw, taking 52 ({@damage 15d6}) necrotic damage on a failed save, or half as much damage on a success. The apparitions then disappear."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/MM/Lich.jpg"
+            }
+          }
+        ]
+      },
+      "isNamedCreature": true,
+      "isNpc": true
+    },
+    {
       "name": "Troll (Action Oriented)",
       "size": "L",
       "type": "giant",
