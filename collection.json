@@ -1,0 +1,119 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NicksHomebrew",
+				"abbreviation": "NHB",
+				"full": "Nick's Homebrew",
+				"url": "",
+				"authors": [
+					"Nick"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1623333141,
+		"dateLastModified": 1623333141
+	},
+	"monster": [
+		{
+			"name": "Troll (Action Oriented)",
+			"source": "NicksHomebrew",
+			"size": "L",
+			"type": "giant",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "12d10 + 60",
+				"average": 126
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 20,
+			"int": 7,
+			"wis": 9,
+			"cha": 7,
+			"passive": 12,
+			"languages": [
+				"Giant"
+			],
+			"cr": "7",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The troll makes three attacks: two with its claws and one with its bite. If both claw attacks hit: The target is considered {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target is {@condition restrained}  and has disadvantage on Strength checks and Strength saving throws."
+					]
+				},
+				{
+					"name": "Swipe",
+					"entries": [
+						"The troll makes a Claw attack against all targets in melee range in a 180 degree arc."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 4}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Cunning",
+					"entries": [
+						"The Trolls agility allows him to move and act quickly. This action can be used to take the Dash or Disengage action."
+					]
+				}
+			],
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Troll.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Troll.png",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled",
+				"restrained"
+			]
+		}
+	]
+}
