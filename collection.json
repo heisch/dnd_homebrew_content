@@ -1,119 +1,194 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "NicksHomebrew",
-				"abbreviation": "NHB",
-				"full": "Nick's Homebrew",
-				"url": "",
-				"authors": [
-					"Nick"
-				],
-				"convertedBy": []
-			}
-		],
-		"dateAdded": 1623334421,
-		"dateLastModified": 1623334421
-	},
-	"monster": [
-		{
-			"name": "Troll (Action Oriented)",
-			"source": "NicksHomebrew",
-			"size": "L",
-			"type": "giant",
-			"alignment": [
-				"C",
-				"E"
-			],
-			"ac": [
-				{
-					"ac": 16,
-					"from": [
-						"natural armor"
-					]
-				}
-			],
-			"hp": {
-				"formula": "12d10 + 60",
-				"average": 126
-			},
-			"speed": {
-				"walk": 40
-			},
-			"str": 18,
-			"dex": 13,
-			"con": 20,
-			"int": 7,
-			"wis": 9,
-			"cha": 7,
-			"passive": 12,
-			"languages": [
-				"Giant"
-			],
-			"cr": "7",
-			"action": [
-				{
-					"name": "Multiattack",
-					"entries": [
-						"The troll makes three attacks: two with its claws and one with its bite. If both claw attacks hit: The target is considered {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target is {@condition restrained}  and has disadvantage on Strength checks and Strength saving throws."
-					]
-				},
-				{
-					"name": "Swipe",
-					"entries": [
-						"The troll makes a Claw attack against all targets in melee range in a 180 degree arc."
-					]
-				},
-				{
-					"name": "Claw",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 2d6 + 4}) slashing damage."
-					]
-				},
-				{
-					"name": "Bite",
-					"entries": [
-						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
-					]
-				}
-			],
-			"bonus": [
-				{
-					"name": "Cunning",
-					"entries": [
-						"The Trolls agility allows him to move and act quickly. This action can be used to take the Dash or Disengage action."
-					]
-				}
-			],
-			"fluff": {
-				"images": [
-					{
-						"type": "image",
-						"href": {
-							"type": "external",
-							"url": "https://5e.tools/img/bestiary/MM/Troll.jpg"
-						}
-					}
-				]
-			},
-			"tokenUrl": "https://5e.tools/img/MM/Troll.png",
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"GI"
-			],
-			"damageTags": [
-				"P",
-				"S"
-			],
-			"miscTags": [
-				"MW"
-			],
-			"conditionInflict": [
-				"grappled",
-				"restrained"
-			]
-		}
-	]
+  "_meta": {
+    "sources": [
+      {
+        "json": "NicksHomebrew",
+        "abbreviation": "NHB",
+        "full": "Nick's Homebrew",
+        "url": "",
+        "authors": [
+          "Nick"
+        ],
+        "convertedBy": []
+      }
+    ],
+    "dateAdded": 1623334421,
+    "dateLastModified": 1623334421
+  },
+  "monster": [
+    {
+      "name": "Troll (Action Oriented)",
+      "size": "L",
+      "type": "giant",
+      "source": "NicksHomebrew",
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 16,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "12d10 + 60",
+        "average": 126
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 18,
+      "dex": 13,
+      "con": 20,
+      "int": 8,
+      "wis": 10,
+      "cha": 8,
+      "passive": 12,
+      "cr": "7",
+      "tokenUrl": "https://5e.tools/img/MM/Troll.png",
+      "fluff": {
+        "entries": [
+          "Born with horrific appetites, trolls eat anything they can catch and devour. They have no society to speak of, but they do serve as mercenaries to orcs, ogres, ettins, hags, and giants. As payment, trolls demand food and treasure. Trolls are difficult to control, however, doing as they please even when working with more powerful creatures.",
+          "Regeneration. Smashing a troll's bones and slashing through its rubbery hide only makes it angry. A troll's wounds close quickly. If the monster loses an arm, a leg, or even its head, those dismembered parts can sometimes act with a life of their own. A troll can even reattach severed body parts, untroubled by its momentary disability. Only acid and fire can arrest the regenerative properties of a troll's flesh. The trolls, enraged, will attack individuals making acid and fire attacks against them above all other prey.",
+          "Troll Freaks. Their regenerative capabilities make trolls especially susceptible to mutation. Although uncommon, such transformations can result from what the troll has done or what has been done to it. A decapitated troll might grow two heads from the stump of its neck, while a troll that eats a fey creature might gain one or more of that creature's traits."
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://5e.tools/img/bestiary/MM/Troll.jpg"
+            }
+          }
+        ]
+      },
+      "languages": [
+        "Giant"
+      ],
+      "languageTags": [
+        "GI"
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The troll makes three attacks: two with its claws and one with its bite. If both claw attacks hit: The target is considered {@condition grappled} (escape {@dc 15}). Until the grapple ends, the target is {@condition restrained}  and has disadvantage on Strength checks and Strength saving throws."
+          ]
+        },
+        {
+          "name": "Swipe",
+          "entries": [
+            "The troll makes a Claw attack against all targets in melee range in a 180 degree arc."
+          ]
+        },
+        {
+          "name": "Claw",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage."
+          ]
+        }
+      ],
+      "conditionInflict": [
+        "grappled",
+        "restrained",
+        "prone"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "S",
+        "P",
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "bonus": [
+        {
+          "name": "Cunning",
+          "entries": [
+            "The Trolls agility allows him to move and act quickly. This action can be used to take the {@action Dash}, {@action Disengage} or {@action Shove} action."
+          ]
+        }
+      ],
+      "trait": [
+        {
+          "name": "Regeneration (Troll)",
+          "entries": [
+            "The troll (action oriented) regains 15 hit points at the start of its turn. If the troll (action oriented) takes acid or fire damage, this trait doesn't function at the start of the troll (action oriented)'s next turn. The troll (action oriented) dies only if it starts its turn with 0 hit points and doesn't regenerate."
+          ]
+        },
+        {
+          "name": "Keen Smell",
+          "entries": [
+            "The troll (action oriented) has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses",
+        "Regeneration"
+      ],
+      "reaction": [
+        {
+          "name": "Vicious",
+          "entries": [
+            "When a melee attack misses by more than 5 points the Troll can - unless it's currently grappling someone - use it's reaction to make a melee attack against the attacker."
+          ]
+        }
+      ],
+      "legendaryHeader": [
+        "The troll can take 3 villainous actions, choosing from the options below. Every villainous action can only be used once per fight at the end of another creature's turn and only one villainous action can be used per combat round."
+      ],
+      "legendary": [
+        {
+          "name": "Troll Smash",
+          "entries": [
+            "The troll jumps at a target within 30 feet of it. The target must succeed on a Dexterity saving throw ({@dc 15}). On a failed safe the target takes 10 ({@damage 3d6}) bludgeoning damage is knocked {@condition prone} and considered {@condition restrained} (escape {@dc 15}). This action does not provoke opportunity attacks."
+          ]
+        },
+        {
+          "name": "Stinking Breath",
+          "entries": [
+            "The troll creates a 20-foot-radius sphere of nauseating gas centered on itself. The cloud spreads around corners. The cloud lingers in the air for two rounds. Each creature that is completely within the cloud at the start of its turn must make a Constitution saving throw against poison. On a failed save, the creature spends its action that turn retching and reeling. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw."
+          ]
+        },
+        {
+          "name": "Frenzy",
+          "entries": [
+            "The troll makes five claw attacks at disadvantage."
+          ]
+        }
+      ],
+      "environment": [
+        "arctic",
+        "forest",
+        "hill",
+        "mountain",
+        "swamp",
+        "underdark"
+      ],
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "skill": {
+        "perception": "+2"
+      },
+      "resist": []
+    }
+  ]
 }
