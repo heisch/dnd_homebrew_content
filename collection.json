@@ -811,6 +811,12 @@
         "perception": "+6"
       },
       "passive": 16,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
       "languages": [
         "any one language (usually Common)"
       ],
@@ -946,6 +952,12 @@
         "perception": "+2"
       },
       "passive": 12,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
       "languages": [
         "understands all languages it spoke in life but can't speak"
       ],
