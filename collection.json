@@ -288,7 +288,7 @@
       ],
       "hasFluff": true,
       "hasFluffImages": true,
-      "tokenUrl": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/deimos_token.png",
+      "tokenUrl": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/img/deimos_token.png",
       "fluff": {
         "entries": [
           {
@@ -384,13 +384,219 @@
             "type": "image",
             "href": {
               "type": "external",
-              "url": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/deimos.jpeg"
+              "url": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/img/deimos.jpeg"
             }
           }
         ]
       },
       "isNamedCreature": true,
       "isNpc": true
+    },
+    {
+      "name": "Mordak Icemourne",
+      "source": "NicksHomebrew",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "Human"
+        ]
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        15,
+        {
+          "ac": 17,
+          "condition": "with {@spell mage armor}",
+          "braces": true
+        }
+      ],
+      "hp": {
+        "formula": "24d8 + 40",
+        "average": 148
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 11,
+      "dex": 16,
+      "con": 14,
+      "int": 20,
+      "wis": 12,
+      "cha": 14,
+      "save": {
+        "int": "+9",
+        "wis": "+5"
+      },
+      "skill": {
+        "arcana": "+9",
+        "history": "+9"
+      },
+      "passive": 11,
+      "languages": [
+        "Common",
+        "Draconic",
+        "Dwarvish",
+        "Elvish",
+        "Infernal"
+      ],
+      "cr": "10",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Mordak is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save {@dc 17}, {@hit 9} to hit with spell attacks). Mordak has the following wizard spells prepared:"
+          ],
+          "footerEntries": [
+            "*Abjuration spell of 1st level or higher"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell blade ward}",
+                "{@spell dancing lights}",
+                "{@spell mending}",
+                "{@spell message}",
+                "{@spell ray of frost}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell alarm}*",
+                "{@spell mage armor}",
+                "{@spell magic missile}",
+                "{@spell shield}*"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell arcane lock}*",
+                "{@spell invisibility}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell counterspell}*",
+                "{@spell dispel magic}*",
+                "{@spell fireball}"
+              ],
+              "slots": 3
+            },
+            "4": {
+              "spells": [
+                "{@spell banishment}*",
+                "{@spell stoneskin}*"
+              ],
+              "slots": 3
+            },
+            "5": {
+              "spells": [
+                "{@spell cone of cold}",
+                "{@spell wall of force}"
+              ],
+              "slots": 2
+            },
+            "6": {
+              "spells": [
+                "{@spell flesh to stone}",
+                "{@spell globe of invulnerability}*",
+                "{@spell mass suggestion}"
+              ],
+              "slots": 1
+            },
+            "7": {
+              "spells": [
+                "{@spell symbol}*",
+                "{@spell teleport}"
+              ],
+              "slots": 1
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Arcane Ward",
+          "entries": [
+            "Mordak has a magical ward that has 30 hit points. Whenever Mordak takes damage, the ward takes the damage instead. If the ward is reduced to 0 hit points, Mordak takes any remaining damage. When Morak casts an abjuration spell of 1st level or higher, the ward regains a number of hit points equal to twice the level of the spell."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Quarterstaff",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d6 - 1}) bludgeoning damage, or 3 ({@damage 1d8 - 1}) bludgeoning damage if used with two hands."
+          ]
+        }
+      ],
+      "environment": [
+        "urban"
+      ],
+      "languageTags": [
+        "C",
+        "DR",
+        "D",
+        "E",
+        "I"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "hasFluff": true,
+      "tokenUrl": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/img/mordak_token.png",
+      "fluff": {
+        "name": "Abjurer",
+        "source": "VGM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "entries": [
+                      "Abjurers are specialist wizards who feel secure when warded by layers of magical power. Kings, nobles, and other wealthy individuals commonly hire abjurers to cast protective spells on their homes and vaults."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/img/mordak.jpeg"
+            }
+          }
+        ]
+      },
+      "isNpc": true,
+      "shortName": "Mordak",
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "isNamedCreature": true
     },
     {
       "name": "Troll (Action Oriented)",
@@ -565,6 +771,252 @@
         "perception": "+2"
       },
       "resist": []
+    },
+    {
+      "name": "Undead Champion",
+      "source": "NicksHomebrew",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "{@item plate armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 143,
+        "formula": "22d8 + 44"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 20,
+      "dex": 15,
+      "con": 14,
+      "int": 10,
+      "wis": 14,
+      "cha": 12,
+      "save": {
+        "str": "+9",
+        "con": "+6"
+      },
+      "skill": {
+        "athletics": "+9",
+        "intimidation": "+5",
+        "perception": "+6"
+      },
+      "passive": 16,
+      "languages": [
+        "any one language (usually Common)"
+      ],
+      "cr": "9",
+      "trait": [
+        {
+          "name": "Indomitable (2/Day)",
+          "entries": [
+            "The champion rerolls a failed saving throw."
+          ]
+        },
+        {
+          "name": "Second Wind (Recharges after a Short or Long Rest)",
+          "entries": [
+            "As a bonus action, the champion can regain 20 hit points."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The champion makes three attacks with its greatsword or its shortbow."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage, plus 7 ({@damage 2d6}) slashing damage if the champion has more than half of its total hit points remaining."
+          ]
+        },
+        {
+          "name": "Shortbow",
+          "entries": [
+            "{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage, plus 7 ({@damage 2d6}) piercing damage if the champion has more than half of its total hit points remaining."
+          ]
+        }
+      ],
+      "environment": [
+        "desert",
+        "urban"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C",
+        "X"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "tokenUrl": "https://5e.tools/img/VGM/Champion.png",
+      "fluff": {
+        "name": "Champion",
+        "source": "VGM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "entries": [
+                      "Champions are mighty warriors who honed their fighting skills in wars or gladiatorial pits. To soldiers and other people who fight for a living, champions are as influential as nobles, and their presence is courted as a sign of status among rulers."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/VGM/Champion.jpg"
+            }
+          }
+        ]
+      },
+      "immune": [
+        "poison"
+      ],
+      "resist": [
+        "necrotic"
+      ]
+    },
+    {
+      "name": "Undead Veteran",
+      "source": "NicksHomebrew",
+      "size": "M",
+      "type": {
+        "type": "undead"
+      },
+      "alignment": [
+        "A"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item splint armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 58,
+        "formula": "9d8 + 18"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 13,
+      "con": 14,
+      "int": 10,
+      "wis": 11,
+      "cha": 10,
+      "skill": {
+        "athletics": "+5",
+        "perception": "+2"
+      },
+      "passive": 12,
+      "languages": [
+        "understands all languages it spoke in life but can't speak"
+      ],
+      "cr": "3",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The veteran makes two longsword attacks. If it has a shortsword drawn, it can also make a shortsword attack."
+          ]
+        },
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+          ]
+        },
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Heavy Crossbow",
+          "entries": [
+            "{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}6 ({@damage 1d10 + 1}) piercing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "CS",
+        "LF"
+      ],
+      "damageTags": [
+        "S",
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW",
+        "RNG"
+      ],
+      "hasFluff": true,
+      "tokenUrl": "https://5e.tools/img/MM/Veteran.png",
+      "fluff": {
+        "name": "Veteran",
+        "source": "MM",
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves."
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "resist": [
+        "necrotic"
+      ],
+      "immune": [
+        "poison"
+      ]
     }
   ]
 }
