@@ -700,7 +700,7 @@
         {
           "name": "Cunning",
           "entries": [
-            "The Trolls agility allows him to move and act quickly. This action can be used to take the {@action Dash}, {@action Disengage} or {@action Shove} action."
+            "The Trolls agility allows him to move and act quickly. This action can be used to take the {@action Dash} or {@action Disengage} action."
           ]
         }
       ],
@@ -708,7 +708,7 @@
         {
           "name": "Regeneration (Troll)",
           "entries": [
-            "The troll (action oriented) regains 15 hit points at the start of its turn. If the troll (action oriented) takes acid or fire damage, this trait doesn't function at the start of the troll (action oriented)'s next turn. The troll (action oriented) dies only if it starts its turn with 0 hit points and doesn't regenerate."
+            "The troll (action oriented) regains 10 hit points at the start of its turn. If the troll (action oriented) takes acid or fire damage, this trait doesn't function at the start of the troll (action oriented)'s next turn. The troll (action oriented) dies only if it starts its turn with 0 hit points and doesn't regenerate."
           ]
         },
         {
