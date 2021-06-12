@@ -2,7 +2,7 @@
   "_meta": {
     "sources": [
       {
-        "json": "NicksHomebrew",
+        "json": "nhb",
         "abbreviation": "NHB",
         "full": "Nick's Homebrew",
         "url": "",
@@ -13,12 +13,27 @@
       }
     ],
     "dateAdded": 1623334421,
-    "dateLastModified": 1623334421
+    "dateLastModified": 1623488756
   },
+  "item": [
+    {
+      "name": "Tiny Fire Elemental Lantern",
+      "source": "nhb",
+      "srd": false,
+      "tier": "major",
+      "rarity": "rare",
+      "reqAttune": true,
+      "wondrous": true,
+      "weight": 5,
+      "entries": [
+        "While lit, you can use an action to summon a {@creature tiny fire elemental} for up to one hour. The lantern can't be used this way again until the next dawn."
+      ]
+    }
+  ],
   "monster": [
     {
       "name": "Deimos",
-      "source": "NicksHomebrew",
+      "source": "nhb",
       "size": "M",
       "type": "undead",
       "alignment": [
@@ -394,7 +409,7 @@
     },
     {
       "name": "Mordak Icemourne",
-      "source": "NicksHomebrew",
+      "source": "nhb",
       "size": "M",
       "type": {
         "type": "humanoid",
@@ -599,10 +614,202 @@
       "isNamedCreature": true
     },
     {
+      "name": "Tiny Fire Elemental",
+      "source": "nhb",
+      "size": "T",
+      "type": "elemental",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "15d4 + 15",
+        "average": 52
+      },
+      "speed": {
+        "walk": 50
+      },
+      "str": 8,
+      "dex": 14,
+      "con": 12,
+      "int": 6,
+      "wis": 10,
+      "cha": 8,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "resist": [
+        {
+          "resist": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "note": "from nonmagical attacks",
+          "cond": true
+        }
+      ],
+      "immune": [
+        "fire",
+        "poison"
+      ],
+      "conditionImmune": [
+        "exhaustion",
+        "grappled",
+        "paralyzed",
+        "petrified",
+        "poisoned",
+        "prone",
+        "restrained",
+        "unconscious"
+      ],
+      "languages": [
+        "Ignan"
+      ],
+      "cr": "1/2",
+      "trait": [
+        {
+          "name": "Fire Form",
+          "entries": [
+            "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 1 ({@damage 1d4}) fire damage. In addition, the elemental can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 1 ({@damage 1d4}) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 1 ({@damage 1d4}) fire damage at the start of each of its turns."
+          ]
+        },
+        {
+          "name": "Illumination",
+          "entries": [
+            "The elemental sheds bright light in a 30-foot radius and dim light in an additional 30 feet."
+          ]
+        },
+        {
+          "name": "Water Susceptibility",
+          "entries": [
+            "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The elemental makes two touch attacks."
+          ]
+        },
+        {
+          "name": "Touch",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 ({@damage 1d4}) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 1 ({@damage 1d4  -1}) fire damage at the start of each of its turns."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Illumination"
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "IG"
+      ],
+      "damageTags": [
+        "F",
+        "C"
+      ],
+      "miscTags": [
+        "MW",
+        "AOE"
+      ],
+      "hasFluff": true,
+      "hasFluffImages": true,
+      "tokenUrl": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/img/tiny_fire_elemental_token.png",
+      "fluff": {
+        "entries": [
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  "A faint humanoid shape threads through the core of this wild, moving flame. A fire elemental is a force of capricious devastation. Wherever it moves, it sets its surroundings ablaze, turning the world to ash, smoke, and cinders. Water can halt its destructive progress, causing the fire elemental to shrink back, hissing and smoking in pain and rage."
+                ]
+              }
+            ]
+          },
+          "Elementals are incarnations of the elements that make up the universe: air, earth, fire, and water. Though little more than animated energy on their own planes of existence, they can be called on by spellcasters and powerful beings to take shape and perform tasks.",
+          {
+            "type": "entries",
+            "entries": [
+              {
+                "type": "entries",
+                "entries": [
+                  {
+                    "type": "entries",
+                    "name": "Living Elements",
+                    "entries": [
+                      "On its home plane, an elemental is a bodiless life force. Its dim consciousness manifests as a physical shape only when focused by the power of magic. A wild spirit of elemental force has no desire except to course through the element of its native plane. Like beasts of the Material Plane, these elemental spirits have no society or culture, and little sense of being."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Conjured by Magic",
+                    "entries": [
+                      "Certain spells and magic items can conjure an elemental, summoning it from the Inner Planes to the Material Plane. Elementals instinctively resent being pulled from their native planes and bound into service. A creature that summons an elemental must assert force of will to control it."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Bound and Shaped",
+                    "entries": [
+                      "Powerful magic can bind an elemental spirit into a material template that defines a specific use and function. Invisible stalkers are air elementals bound to a specific form, in the same way that water elementals can be shaped into water weirds."
+                    ]
+                  },
+                  {
+                    "type": "entries",
+                    "name": "Elemental Nature",
+                    "entries": [
+                      "An elemental doesn't require air, food, drink, or sleep."
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/heisch/dnd_homebrew_content/main/img/tiny_fire_elemental.png"
+            }
+          }
+        ]
+      },
+      "save": {
+        "dex": "+4"
+      },
+      "vulnerable": [
+        "cold"
+      ],
+      "environment": [
+        "desert"
+      ]
+    },
+    {
       "name": "Troll (Action Oriented)",
       "size": "L",
       "type": "giant",
-      "source": "NicksHomebrew",
+      "source": "nhb",
       "alignment": [
         "C",
         "E"
@@ -774,7 +981,7 @@
     },
     {
       "name": "Undead Champion",
-      "source": "NicksHomebrew",
+      "source": "nhb",
       "size": "M",
       "type": "undead",
       "alignment": [
@@ -918,7 +1125,7 @@
     },
     {
       "name": "Undead Veteran",
-      "source": "NicksHomebrew",
+      "source": "nhb",
       "size": "M",
       "type": {
         "type": "undead"
