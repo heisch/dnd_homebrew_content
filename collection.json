@@ -731,17 +731,6 @@
       ],
       "hasFluff": true,
       "tokenUrl": "https://5e.tools/img/DIP/Anchorite%20of%20Talos.png",
-      "fluff": {
-        "images": [
-          {
-            "type": "image",
-            "href": {
-              "type": "internal",
-              "path": "bestiary/DIP/Anchorite%20of%20Talos.png"
-            }
-          }
-        ]
-      },
       "senses": [
         "darkvision 60 ft."
       ],
