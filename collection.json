@@ -614,6 +614,145 @@
       "isNamedCreature": true
     },
     {
+      "name": "Orc Druid",
+      "source": "nhb",
+      "size": "M",
+      "type": {
+        "type": "humanoid",
+        "tags": [
+          "orc"
+        ]
+      },
+      "alignment": [
+        "C",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "{@item hide armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "9d8 + 18",
+        "average": 58
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 10,
+      "dex": 14,
+      "con": 12,
+      "int": 13,
+      "wis": 16,
+      "cha": 13,
+      "skill": {
+        "medicine": "+5",
+        "persuasion": "+3",
+        "nature": "+5"
+      },
+      "passive": 13,
+      "languages": [
+        "any two languages"
+      ],
+      "cr": "3",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "The orc druid is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save {@dc 13}, {@hit 5} to hit with spell attacks). The orc druid has the following spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell frostbite|XGE}",
+                "{@spell shillelagh}",
+                "{@spell thorn whip}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell cure wounds}",
+                "{@spell faerie fire}",
+                "{@spell fog cloud}",
+                "{@spell healing word}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell hold person}",
+                "{@spell lesser restoration}",
+                "{@spell misty step}"
+              ],
+              "slots": 3
+            },
+            "3": {
+              "spells": [
+                "{@spell lightning bolt}",
+                "{@spell thunder step|XGE}"
+              ],
+              "slots": 2
+            }
+          },
+          "ability": "wis",
+          "type": "spellcasting"
+        }
+      ],
+      "trait": [
+        {
+          "name": "Aggressive",
+          "entries": [
+            "As a bonus action, the orc druid can move up to its speed toward a hostile creature that it can see."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Club (shillelagh)",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d8 + 5}) bludgeoning damage."
+          ]
+        }
+      ],
+      "languageTags": [
+        "X"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "spellcastingTags": [
+        "CD"
+      ],
+      "miscTags": [
+        "MW"
+      ],
+      "hasFluff": true,
+      "tokenUrl": "https://5e.tools/img/DIP/Anchorite%20of%20Talos.png",
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "internal",
+              "path": "bestiary/DIP/Anchorite%20of%20Talos.png"
+            }
+          }
+        ]
+      },
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "traitTags": [
+        "Aggressive"
+      ]
+    },
+    {
       "name": "Tiny Fire Elemental",
       "source": "nhb",
       "size": "T",
